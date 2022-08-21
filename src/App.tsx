@@ -16,6 +16,13 @@ export function App(props: AppProps) {
 
   return (
     <>
+      <div className="pins">
+        {pins.flatMap(({ count, pin }) =>
+          Array.from({ length: count ?? 1 }).map(() => (
+            <Pin {...pin} key={(pinCounter++).toString()} />
+          ))
+        )}
+      </div>
       {/*
       NOTE: printing these after full page(s) of pins causes odd overlaps that have not been
       resolved yet!
