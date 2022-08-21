@@ -1,0 +1,42 @@
+/* style sheet for "A4" printing */
+@media print and (width: 21cm) and (height: 29.7cm) {
+  @page {
+    margin: 3cm;
+  }
+  --inch: 99px;
+}
+
+/* style sheet for "letter" printing */
+@media print and (width: 8.5in) and (height: 11in) {
+  @page {
+    margin: 1in;
+  }
+  --inch: 99px;
+}
+
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  --inch: 99px;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}

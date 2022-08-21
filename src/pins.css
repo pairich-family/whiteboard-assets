@@ -1,0 +1,21 @@
+.pin {
+  background-color: white;
+  border-radius: 50%;
+
+  --pin-padding: calc(var(--inch) / 4);
+  --pin-content-size: calc(var(--inch) * 2 - var(--pin-padding) * 2);
+  padding: var(--pin-padding);
+
+  height: var(--pin-content-size);
+  width: var(--pin-content-size);
+  max-height: var(--pin-content-size);
+  max-width: var(--pin-content-size);
+
+  display: flex;
+}
+
+@media print and (width: 8.5in) and (height: 11in) {
+  .pin:nth-child(12n)::after {
+    page-break-after: always;
+  }
+}

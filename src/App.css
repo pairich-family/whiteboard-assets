@@ -1,0 +1,26 @@
+#root {
+  background-color: green;
+  color: black;
+
+  margin: 0 auto;
+  padding: calc(var(--inch) / 4);
+
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--inch) / 4);
+}
+
+.dotted {
+  border: dotted lightgrey 1px;
+}
+
+.pins {
+  display: grid;
+  gap: calc(var(--inch) / 4);
+  grid-template-columns: auto auto auto auto;
+}
+
+.pins::after {
+  content: " ";
+  break-after: always;
+}
