@@ -62,6 +62,7 @@ export const TASKS_SPECS: TasksSpec[] = [
     task: {
       svgUrl: iconBreakfast,
       label: "Breakfast",
+      collapsed: true,
     },
   },
   {
