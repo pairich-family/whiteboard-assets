@@ -19,7 +19,6 @@ import iconWriting from "./assets/Writing.svg";
 export interface TaskProps {
   svgUrl: string;
   label: string;
-  additionalMargin?: string;
 }
 
 export const Task: FC<TaskProps> = ({ svgUrl, label }) => {
