@@ -6,6 +6,7 @@ import iconAbcMouse from "./assets/ABC Mouse.svg";
 import iconArt from "./assets/Art.svg";
 import iconBreakfast from "./assets/Breakfast.svg";
 import iconBrushTeeth from "./assets/Brush teeth.svg";
+import iconCleanHouse from "./assets/Clean house.svg";
 import iconDayClothes from "./assets/Day clothes.svg";
 import iconDoHair from "./assets/Do hair.svg";
 import iconGeography from "./assets/Geography.svg";
@@ -78,6 +79,13 @@ export const TASKS_SPECS: TasksSpec[] = [
     task: {
       svgUrl: iconGeography,
       label: "Geography",
+    },
+  },
+  {
+    task: {
+      svgUrl: iconCleanHouse,
+      label: "Clean house",
+      collapsed: true,
     },
   },
   {
