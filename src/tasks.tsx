@@ -45,13 +45,6 @@ export interface TasksSpec {
 export const TASKS_SPECS: TasksSpec[] = [
   {
     task: {
-      svgUrl: iconDoHair,
-      label: "Do hair",
-      collapsed: true,
-    },
-  },
-  {
-    task: {
       svgUrl: iconAbcMouse,
       label: "ABC Mouse",
     },
@@ -79,12 +72,6 @@ export const TASKS_SPECS: TasksSpec[] = [
   },
   {
     task: {
-      svgUrl: iconGeography,
-      label: "Geography",
-    },
-  },
-  {
-    task: {
       svgUrl: iconCleanHouse,
       label: "Clean house",
       collapsed: true,
@@ -95,6 +82,19 @@ export const TASKS_SPECS: TasksSpec[] = [
       svgUrl: iconDayClothes,
       label: "Day clothes",
       collapsed: true,
+    },
+  },
+  {
+    task: {
+      svgUrl: iconDoHair,
+      label: "Do hair",
+      collapsed: true,
+    },
+  },
+  {
+    task: {
+      svgUrl: iconGeography,
+      label: "Geography",
     },
   },
   {
