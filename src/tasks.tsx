@@ -13,6 +13,7 @@ import iconGeography from "./assets/Geography.svg";
 import iconMakeBed from "./assets/Make bed.svg";
 import iconMath from "./assets/Math.svg";
 import iconNightClothes from "./assets/Night clothes.svg";
+import iconPickUpToys from "./assets/Pick up toys.svg";
 import iconReading from "./assets/Reading.svg";
 import iconScience from "./assets/Science.svg";
 import iconStorytime from "./assets/Storytime.svg";
@@ -111,6 +112,13 @@ export const TASKS_SPECS: TasksSpec[] = [
     task: {
       svgUrl: iconNightClothes,
       label: "Night clothes",
+      collapsed: true,
+    },
+  },
+  {
+    task: {
+      svgUrl: iconPickUpToys,
+      label: "Pick up toys",
       collapsed: true,
     },
   },
