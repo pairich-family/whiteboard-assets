@@ -69,7 +69,9 @@ export const TASKS_SPECS: TasksSpec[] = [
     task: {
       svgUrl: iconBrushTeeth,
       label: "Brush teeth",
+      collapsed: true,
     },
+    count: 4,
   },
   {
     task: {
