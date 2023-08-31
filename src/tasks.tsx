@@ -10,6 +10,7 @@ import iconCleanHouse from "./assets/Clean house.svg";
 import iconDayClothes from "./assets/Day clothes.svg";
 import iconDoHair from "./assets/Do hair.svg";
 import iconGeography from "./assets/Geography.svg";
+import iconHomeschoolPlus from "./assets/Homeschool Plus.svg";
 import iconMakeBed from "./assets/Make bed.svg";
 import iconMath from "./assets/Math.svg";
 import iconNightClothes from "./assets/Night clothes.svg";
@@ -24,15 +25,28 @@ export interface TaskProps {
   svgUrl: string;
   label: string;
   collapsed?: boolean;
+  homeschoolPlusLabelHack?: boolean;
 }
 
-export const Task: FC<TaskProps> = ({ svgUrl, label, collapsed }) => {
+export const Task: FC<TaskProps> = ({
+  svgUrl,
+  label,
+  collapsed,
+  homeschoolPlusLabelHack,
+}) => {
   return (
     <div className={["task", "dotted"].join(" ") + (collapsed ? " task-collapsed" : "")}>
       <div className="icon">
         <img src={svgUrl} alt={label} title={label} />
       </div>
-      <div className="label">{label}</div>
+      {homeschoolPlusLabelHack ? (
+        <div
+          dangerouslySetInnerHTML={{ __html: label }}
+          className="label homeschool-plus-hack"
+        ></div>
+      ) : (
+        <div className="label">{label}</div>
+      )}
     </div>
   );
 };
@@ -95,6 +109,13 @@ export const TASKS_SPECS: TasksSpec[] = [
     task: {
       svgUrl: iconGeography,
       label: "Geography",
+    },
+  },
+  {
+    task: {
+      svgUrl: iconHomeschoolPlus,
+      label: "Homeschool<span>&#x2795</span>",
+      homeschoolPlusLabelHack: true,
     },
   },
   {
