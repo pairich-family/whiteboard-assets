@@ -19,11 +19,12 @@ import iconWriting from "./assets/Writing.svg";
 export interface TaskProps {
   svgUrl: string;
   label: string;
+  collapsed?: boolean;
 }
 
-export const Task: FC<TaskProps> = ({ svgUrl, label }) => {
+export const Task: FC<TaskProps> = ({ svgUrl, label, collapsed }) => {
   return (
-    <div className={["task", "dotted"].join(" ")}>
+    <div className={["task", "dotted"].join(" ") + (collapsed ? " task-collapsed" : "")}>
       <div className="icon">
         <img src={svgUrl} alt={label} title={label} />
       </div>
