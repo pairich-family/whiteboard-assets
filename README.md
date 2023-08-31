@@ -8,5 +8,5 @@ Last tested with:
 
 - NodeJS 16.17.0
 - Firefox 103.0.2
-- Brother (which is ~99 DPI).
+- Brother MFC-L2710DW printer (which is ~99 DPI).
 - Letter-size paper.
