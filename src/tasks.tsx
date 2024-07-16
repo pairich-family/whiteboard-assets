@@ -35,7 +35,11 @@ export const Task: FC<TaskProps> = ({
   homeschoolPlusLabelHack,
 }) => {
   return (
-    <div className={["task", "dotted"].join(" ") + (collapsed ? " task-collapsed" : "")}>
+    <div
+      className={
+        ["task", "dotted"].join(" ") + (collapsed ? " task-collapsed" : "")
+      }
+    >
       <div className="icon">
         <img src={svgUrl} alt={label} title={label} />
       </div>
