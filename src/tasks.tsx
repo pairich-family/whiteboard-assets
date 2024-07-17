@@ -12,6 +12,7 @@ import iconDayClothes from "./assets/Day clothes.svg";
 import iconDoHair from "./assets/Do hair.svg";
 import iconGeography from "./assets/Geography.svg";
 import iconGrammar from "./assets/Grammar.svg";
+import iconHandwriting from "./assets/Handwriting.svg";
 import iconHomeschoolPlus from "./assets/Homeschool Plus.svg";
 import iconMakeBed from "./assets/Make bed.svg";
 import iconMath from "./assets/Math.svg";
@@ -134,6 +135,12 @@ export const TASKS_SPECS: TasksSpec[] = [
     task: {
       svgUrl: iconGrammar,
       label: "Grammar",
+    },
+  },
+  {
+    task: {
+      svgUrl: iconHandwriting,
+      label: "Handwriting",
     },
   },
   {
