@@ -14,6 +14,7 @@ import iconGeography from "./assets/Geography.svg";
 import iconGrammar from "./assets/Grammar.svg";
 import iconHandwriting from "./assets/Handwriting.svg";
 import iconHomeschoolPlus from "./assets/Homeschool Plus.svg";
+import iconLotion from "./assets/Lotion.svg";
 import iconMakeBed from "./assets/Make bed.svg";
 import iconMath from "./assets/Math.svg";
 import iconNightClothes from "./assets/Night clothes.svg";
@@ -149,6 +150,14 @@ export const TASKS_SPECS: TasksSpec[] = [
       label: "Homeschool<span>&#x2795</span>",
       homeschoolPlusLabelHack: true,
     },
+  },
+  {
+    task: {
+      svgUrl: iconLotion,
+      label: "Lotion",
+      collapsed: true,
+    },
+    count: 1,
   },
   {
     task: {
