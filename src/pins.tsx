@@ -7,6 +7,7 @@ import iconArt from "./assets/Art.svg";
 import iconBeach from "./assets/Beach.svg";
 import iconChildrensMuseum from "./assets/Children's Museum.svg";
 import iconEaster from "./assets/Easter.svg";
+import iconGeneralConference from "./assets/General Conference.svg";
 import iconGeography from "./assets/Geography.svg";
 import iconHoliday4th from "./assets/Holiday (4th).svg";
 import iconHolidayBirthday from "./assets/Holiday (Birthday).svg";
@@ -100,6 +101,16 @@ export const PINS_SPECS: PinsSpec[] = [
       },
     },
     count: 1,
+  },
+  {
+    pin: {
+      svgUrl: iconGeneralConference,
+      additionalStyles: {
+        margin: "0 auto",
+        marginBottom: "20px",
+      },
+    },
+    count: 2,
   },
   {
     pin: {
