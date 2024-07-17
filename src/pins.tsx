@@ -47,7 +47,6 @@ export interface PinsSpec {
   pin: PinProps;
 }
 
-// TODO: adjust `additionalMargin` for each of these
 export const PINS_SPECS: PinsSpec[] = [
   {
     pin: {
