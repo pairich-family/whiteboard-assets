@@ -26,6 +26,7 @@ export interface TaskProps {
   label: string;
   collapsed?: boolean;
   homeschoolPlusLabelHack?: boolean;
+  additionalLabelStyles?: React.CSSProperties;
 }
 
 export const Task: FC<TaskProps> = ({
@@ -33,6 +34,7 @@ export const Task: FC<TaskProps> = ({
   label,
   collapsed,
   homeschoolPlusLabelHack,
+  additionalLabelStyles,
 }) => {
   return (
     <div
@@ -49,7 +51,9 @@ export const Task: FC<TaskProps> = ({
           className="label homeschool-plus-hack"
         ></div>
       ) : (
-        <div className="label">{label}</div>
+        <div className="label" style={additionalLabelStyles}>
+          {label}
+        </div>
       )}
     </div>
   );
