@@ -25,6 +25,7 @@ import iconReading from "./assets/Reading.svg";
 import iconScience from "./assets/Science.svg";
 import iconStorytime from "./assets/Storytime.svg";
 import iconSummerBridge from "./assets/Summer Bridge.svg";
+import iconTyping from "./assets/Typing.svg";
 import iconWriting from "./assets/Writing.svg";
 
 export interface TaskProps {
@@ -227,6 +228,12 @@ export const TASKS_SPECS: TasksSpec[] = [
       svgUrl: iconSummerBridge,
       label: "Summer Bridge",
       collapsed: true,
+    },
+  },
+  {
+    task: {
+      svgUrl: iconTyping,
+      label: "Typing",
     },
   },
   {
