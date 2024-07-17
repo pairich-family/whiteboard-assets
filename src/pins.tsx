@@ -29,15 +29,30 @@ export interface PinProps {
   svgUrl: string;
   altText?: string;
   additionalMargin?: string;
+  additionalStyles?: React.CSSProperties;
 }
 
-export const Pin: FC<PinProps> = ({ svgUrl, altText, additionalMargin }) => {
+export const Pin: FC<PinProps> = ({
+  svgUrl,
+  altText,
+  additionalMargin,
+  additionalStyles,
+}) => {
   const marginStyle = additionalMargin
     ? { style: { margin: additionalMargin } }
     : {};
+  const additionalStylesConverted = additionalStyles
+    ? { style: additionalStyles }
+    : {};
   return (
     <div className={["pin", "dotted"].join(" ")}>
-      <img src={svgUrl} alt={altText} title={altText} {...marginStyle} />
+      <img
+        src={svgUrl}
+        alt={altText}
+        title={altText}
+        {...marginStyle}
+        {...additionalStylesConverted}
+      />
     </div>
   );
 };
