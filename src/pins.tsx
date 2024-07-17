@@ -32,10 +32,12 @@ export interface PinProps {
 }
 
 export const Pin: FC<PinProps> = ({ svgUrl, altText, additionalMargin }) => {
-  const style = additionalMargin ? { style: { margin: additionalMargin } } : {};
+  const marginStyle = additionalMargin
+    ? { style: { margin: additionalMargin } }
+    : {};
   return (
     <div className={["pin", "dotted"].join(" ")}>
-      <img src={svgUrl} alt={altText} title={altText} {...style} />
+      <img src={svgUrl} alt={altText} title={altText} {...marginStyle} />
     </div>
   );
 };
