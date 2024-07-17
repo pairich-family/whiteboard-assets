@@ -31,13 +31,13 @@ export interface PinProps {
   svgUrl: string;
   altText?: string;
   additionalMargin?: string;
-  additionalStyles?: React.CSSProperties;
+  additionalImgStyles?: React.CSSProperties;
 }
 
 export const Pin: FC<PinProps> = ({
   svgUrl,
   altText,
-  additionalStyles,
+  additionalImgStyles: additionalStyles,
 }) => {
   return (
     <div className={["pin", "dotted"].join(" ")}>
@@ -66,7 +66,7 @@ export const PINS_SPECS: PinsSpec[] = [
   {
     pin: {
       svgUrl: iconArt,
-      additionalStyles: {
+      additionalImgStyles: {
         margin: "20px",
       },
     },
@@ -75,7 +75,7 @@ export const PINS_SPECS: PinsSpec[] = [
   {
     pin: {
       svgUrl: iconBeach,
-      additionalStyles: {
+      additionalImgStyles: {
         margin: "10px",
       },
     },
@@ -84,7 +84,7 @@ export const PINS_SPECS: PinsSpec[] = [
   {
     pin: {
       svgUrl: iconChildrensMuseum,
-      additionalStyles: {
+      additionalImgStyles: {
         margin: "10px",
       },
     },
@@ -93,7 +93,7 @@ export const PINS_SPECS: PinsSpec[] = [
   {
     pin: {
       svgUrl: iconEaster,
-      additionalStyles: {
+      additionalImgStyles: {
         margin: "0 auto",
         marginBottom: "10px",
       },
@@ -103,7 +103,7 @@ export const PINS_SPECS: PinsSpec[] = [
   {
     pin: {
       svgUrl: iconGeneralConference,
-      additionalStyles: {
+      additionalImgStyles: {
         margin: "0 auto",
         marginBottom: "20px",
       },
@@ -124,7 +124,7 @@ export const PINS_SPECS: PinsSpec[] = [
   {
     pin: {
       svgUrl: iconHolidayBirthday,
-      additionalStyles: {
+      additionalImgStyles: {
         margin: "20px",
       },
     },
@@ -153,7 +153,7 @@ export const PINS_SPECS: PinsSpec[] = [
   {
     pin: {
       svgUrl: iconLibrary,
-      additionalStyles: {
+      additionalImgStyles: {
         margin: "24px",
       },
     },
@@ -162,7 +162,7 @@ export const PINS_SPECS: PinsSpec[] = [
   {
     pin: {
       svgUrl: iconMovieNight,
-      additionalStyles: {
+      additionalImgStyles: {
         margin: "12px",
       },
     },
@@ -171,7 +171,7 @@ export const PINS_SPECS: PinsSpec[] = [
   {
     pin: {
       svgUrl: iconMplp,
-      additionalStyles: {
+      additionalImgStyles: {
         margin: "12px",
       },
     },
@@ -180,7 +180,7 @@ export const PINS_SPECS: PinsSpec[] = [
   {
     pin: {
       svgUrl: iconPark,
-      additionalStyles: {
+      additionalImgStyles: {
         margin: "24px",
       },
     },
@@ -201,7 +201,7 @@ export const PINS_SPECS: PinsSpec[] = [
   {
     pin: {
       svgUrl: iconShopping,
-      additionalStyles: {
+      additionalImgStyles: {
         margin: "12px",
       },
     },
@@ -210,7 +210,7 @@ export const PINS_SPECS: PinsSpec[] = [
   {
     pin: {
       svgUrl: iconSwimming,
-      additionalStyles: {
+      additionalImgStyles: {
         margin: "12px",
       },
     },
@@ -219,7 +219,7 @@ export const PINS_SPECS: PinsSpec[] = [
   {
     pin: {
       svgUrl: iconThink,
-      additionalStyles: {
+      additionalImgStyles: {
         margin: "24px",
       },
     },
@@ -228,7 +228,7 @@ export const PINS_SPECS: PinsSpec[] = [
   {
     pin: {
       svgUrl: iconVacation,
-      additionalStyles: {
+      additionalImgStyles: {
         margin: "12px",
       },
     },
