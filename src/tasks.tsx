@@ -17,6 +17,7 @@ import iconHomeschoolPlus from "./assets/Homeschool Plus.svg";
 import iconLotion from "./assets/Lotion.svg";
 import iconMakeBed from "./assets/Make bed.svg";
 import iconMath from "./assets/Math.svg";
+import iconMemorization from "./assets/Memorization.svg";
 import iconNightClothes from "./assets/Night clothes.svg";
 import iconPickUpToys from "./assets/Pick up toys.svg";
 import iconPotty from "./assets/Potty.svg";
@@ -170,6 +171,15 @@ export const TASKS_SPECS: TasksSpec[] = [
     task: {
       svgUrl: iconMath,
       label: "Math",
+    },
+  },
+  {
+    task: {
+      svgUrl: iconMemorization,
+      label: "Memorization",
+      additionalLabelStyles: {
+        fontSize: "calc(var(--inch) * 0.45)",
+      },
     },
   },
   {
